@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+
+/* Body */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Navigation */
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: 500;
+  color: #6cbe71;
+}
+
+.navbar-light .navbar-nav .nav-item .btn {
+  color: white;
+  background-color: #fba319;
+}
+
+.navbar-light .navbar-nav .nav-item .btn:hover {
+  background-color: #e28d03;
+}
+
+.navbar-light .navbar-nav .nav-item .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
+}
+
+/* Banner */
+
+.banner-image .content h1 {
+  font-family: "DM Serif Text", serif;
+  font-size: 58px;
+}
+
+.banner-image .content p {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.banner-image .content .btn {
+  color: white;
+  background-color: #fba319;
+}
+
+.banner-image .content .btn:hover {
+  background-color: #e28d03;
+}
+
+.banner-image .content .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
+}
+
+/* All Section Element */
+
+section .section-label {
+  font-family: "DM Serif Text", serif;
+  font-size: 50px;
+}
+
+section .section-view-all.btn {
+  color: #fba319;
+}
+
+section .section-view-all.btn:hover {
+  color: #e28d03;
+}
+
+section .section-view-all.btn:focus {
+  box-shadow: 0 0 0 0.25rem white;
+}
+
+.hightlight {
+  color: #fba319;
+}
+
+/* Custom Button List */
+
+.btn-list {
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.btn-list .btn {
+  color: black;
+  border-color: #d7d7d7;
+}
+
+.btn-list .btn:hover {
+  background-color: #d7d7d7;
+}
+
+.btn-list .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(217, 217, 217, 0.5);
+}
+
+.btn-list .btn.active {
+  color: white;
+  background-color: #5aa85c;
+}
+
+.btn-list .btn.active:hover {
+  background-color: #4f9652;
+}
+
+.btn-list .btn.active:focus {
+  box-shadow: 0 0 0 0.25rem rgba(105, 176, 108, 0.5);
+}
+
+/* Project Section */
+
+.project .project-box h3 {
+  font-family: "DM Serif Text", serif;
+  font-size: 30px;
+}
+
+/* Success Stories Section */
+
+.success-stories .success-stories-box p {
+  font-size: 20px;
+}
+
+.success-stories .success-stories-box .btn {
+  color: white;
+  background-color: #fba319;
+}
+
+.success-stories .success-stories-box .btn:hover {
+  background-color: #e28d03;
+}
+
+.success-stories .success-stories-box .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
+}
+
+/* Education Section */
+
+.education .education-box .story {
+  font-size: 20px;
+}
+
+.education .education-box .date {
+  color: #575757;
+}
+
+/* Enterpreneur Section */
+
+.enterpreneur .enterpreneur-box .name {
+  font-size: 24px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #182119;
+  margin-top: 100px;
+}
+
+footer .copyright {
+  color: #9e9e9e;
+  background-color: #0e160f;
+}
