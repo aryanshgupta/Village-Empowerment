@@ -27,6 +27,32 @@ body {
   box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
 }
 
+.navbar-light .btn-group .btn,
+.navbar-light .navbar-nav .nav-item .btn-group .btn {
+  color: #929292;
+  background-color: white;
+  border-color: #cecece;
+}
+
+.navbar-light .btn-group .btn:hover,
+.navbar-light .navbar-nav .nav-item .btn-group .btn:hover {
+  background-color: #f2f2f2;
+}
+
+.navbar-light .btn-group .btn:focus,
+.navbar-light .navbar-nav .nav-item .btn-group .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(230, 230, 230, 0.5);
+}
+
+.navbar-light .btn-group .dropdown-menu .dropdown-item.active,
+.navbar-light .navbar-nav .nav-item .btn-group .dropdown-menu .dropdown-item.active {
+  background-color: #fba319;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(230, 230, 230, 0.5);
+}
+
 /* Banner */
 
 .banner-image .content h1 {
@@ -71,7 +97,7 @@ section .section-view-all.btn:focus {
   box-shadow: 0 0 0 0.25rem white;
 }
 
-.hightlight {
+.highlight {
   color: #fba319;
 }
 
@@ -151,6 +177,151 @@ section .section-view-all.btn:focus {
 .enterpreneur .enterpreneur-box .name {
   font-size: 24px;
 }
+
+/* About Us Section */
+
+.about-us {
+  margin: 75px 0 50px 0;
+}
+
+.about-us .about-us-box1 p {
+  font-family: "DM Serif Text", serif;
+  font-size: 20px;
+}
+
+.about-us .about-us-box2 p {
+  font-size: 20px;
+}
+
+.about-us .about-us-box2 h3 {
+  font-family: "DM Serif Text", serif;
+  font-style: italic;
+  font-size: 27px;
+}
+
+.stats {
+  margin: 100px 0 50px 0;
+}
+
+.stats .stat-info {
+  font-family: "DM Serif Text", serif;
+}
+
+.stats .stat-info .stat-value {
+  font-size: 35px;
+}
+
+.stats .stat-info .stat-title {
+  font-size: 18px;
+}
+
+/* Write Story Section */
+
+@media screen and (min-width: 1200px) {
+  .write-story {
+    padding: 0 250px;
+  }
+}
+
+.write-story form label {
+  font-size: 18px;
+}
+
+.write-story .form-control {
+  border-color: #dadada;
+  padding: 20px;
+}
+
+.write-story .form-control:focus {
+  border-color: #fba319;
+  box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
+}
+
+.write-story .form-control::placeholder {
+  color: #929292;
+}
+
+.write-story .menu-btn .form-select {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.write-story .menu-btn .form-select:focus {
+  border-color: #fba319;
+  box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
+}
+
+.write-story .menu-btn .form-control {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 8px 0;
+}
+
+.write-story .menu-btn .form-control:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.write-story .menu-btn .btn.menu-btn-item {
+  color: black;
+  background-color: transparent;
+}
+
+.write-story .menu-btn .btn.menu-btn-item:hover {
+  background-color: #e6e6e6;
+}
+
+.write-story .select-location .form-select {
+  border-color: #dadada;
+  padding: 20px;
+  color: #929292;
+}
+
+.write-story .select-location .form-select:focus {
+  border-color: #fba319;
+  box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
+}
+
+.write-story .select-location .form-select option {
+  color: #fba319;
+}
+
+.write-story .btn {
+  color: white;
+  background-color: #fba319;
+}
+
+.write-story .btn:hover {
+  background-color: #e28d03;
+}
+
+.write-story .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(252, 166, 29, 0.5);
+}
+
+/* Dashboard Section */
+
+/* User Stats Section */
+
+.user-stats .user-stats-box .total-story {
+  color: #3a251f;
+  background-color: #ffdcd1;
+  border-radius: 10px;
+  height: 240px;
+}
+
+.user-stats .user-stats-box .total-view {
+  color: #064d63;
+  background-color: #d1f4ff;
+  border-radius: 10px;
+  height: 240px;
+}
+
+/* @media (min-width: 992px) {
+  .user-stats {
+    margin-left: 270px;
+  }
+} */
 
 /* Footer */
 

@@ -13,14 +13,23 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand ms-4 ms-xl-5" href="/">
+        <a class="navbar-brand ms-xl-5" href="/">
           <img src="/images/icons/logo-full.png" alt="Sanjha Pind" width="150px" height="31px" />
         </a>
-        <div class="ms-auto me-3 my-2 d-block d-lg-none">
+        <div class="ms-auto my-2 d-block d-lg-none">
           <a href="#"> <img src="/images/icons/search.png" alt="Search" id="search" width="40px" height="40px" /></a>
         </div>
+        <div class="btn-group me-2 d-block d-lg-none">
+          <button type="button" class="btn dropdown-toggle rounded-pill" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            En
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            <li><button type="button" class="dropdown-item active" aria-current="true">English</button></li>
+            <li><button type="button" class="dropdown-item">Hindi</button></li>
+          </ul>
+        </div>
         <button
-          class="navbar-toggler me-4"
+          class="navbar-toggler me-1"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarContent"
@@ -31,37 +40,58 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ms-4 ms-lg-auto mb-2 mb-md-0">
-            <li class="nav-item mx-0 mx-xl-2">
+          <ul class="navbar-nav ms-1 ms-lg-auto">
+            <li class="nav-item mx-xl-2">
               <a class="nav-link" href="/home.html">Home</a>
             </li>
-            <li class="nav-item mx-0 mx-xl-2">
+            <li class="nav-item mx-xl-2">
               <a class="nav-link active" href="/our-stories.html">Our Story</a>
             </li>
-            <li class="nav-item mx-0 mx-xl-2">
+            <li class="nav-item mx-xl-2">
               <a class="nav-link" href="#">Membership</a>
             </li>
-            <li class="nav-item mx-0 mx-xl-2">
-              <a class="nav-link" href="#">Write</a>
+            <li class="nav-item mx-xl-2">
+              <a class="nav-link" href="/write-story.html">Write</a>
             </li>
-            <li class="nav-item mx-0 mx-xl-2">
+            <li class="nav-item mx-xl-2">
               <a class="nav-link" href="#">Resources</a>
             </li>
-            <li class="nav-item mx-0 mx-xl-2">
+            <li class="nav-item mx-xl-2">
               <a class="nav-link" href="#">Sign In</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-4 me-4 me-xl-5 mb-2 mb-md-0">
+          <ul class="navbar-nav ms-xl-4 me-xl-5">
             <li class="nav-item my-2 d-none d-lg-block">
               <a href="#"> <img src="/images/icons/search.png" alt="Search" id="search" width="40px" height="40px" /></a>
             </li>
             <li class="nav-item my-2 mx-lg-2 d-none d-lg-block">
-              <a href="#"><img src="/images/icons/call.png" alt="Call us" width="40px" height="40px" /></a>
+              <a href="#">
+                <button class="btn rounded-circle pb-2" id="call-us">
+                  <img src="/images/icons/call.png" alt="Call us" width="18px" height="18px" />
+                </button>
+              </a>
             </li>
             <li class="nav-item my-2 d-none d-lg-block">
               <a href="#">
                 <button class="btn rounded-pill px-4" id="get-started">Get started</button>
               </a>
+            </li>
+            <li class="nav-item my-2 mx-lg-2 d-none d-lg-block">
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn dropdown-toggle rounded-pill"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  En
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><button type="button" class="dropdown-item active" aria-current="true">English</button></li>
+                  <li><button type="button" class="dropdown-item">Hindi</button></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -84,76 +114,76 @@
     <!-- Our Stories -->
     <section class="our-stories my-5">
       <div class="container">
-        <h1 class="section-label text-center">Stories in<span class="hightlight"> Village</span></h1>
+        <h1 class="section-label text-center">Stories in<span class="highlight"> Village</span></h1>
         <div class="btn-list mb-5 py-4 text-center" style="overflow: auto">
           <button class="btn btn-lg rounded-pill mx-0 mx-sm-2 active">Education</button>
           <button class="btn btn-lg rounded-pill mx-2">Entrepreneur</button>
           <button class="btn btn-lg rounded-pill mx-2">Environment</button>
         </div>
         <div class="row">
-          <div class="col-md">
+          <div class="col-md rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/education-story1.png" alt="Our Story1" />
+              <img class="w-100" src="images/education-story1.png" alt="Our Story1" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">A clean environment is essential for the existence of all living beings.</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-1.png" alt="Profile1" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-1.png" alt="Profile1" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
             </div>
           </div>
-          <div class="col-md my-5 my-md-0">
+          <div class="col-md my-3 my-md-0 mx-0 mx-md-3 rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/education-story2.png" alt="Our Story2" />
+              <img class="w-100" src="images/education-story2.png" alt="Our Story2" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">Everyone should give priority to the save the environment’</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-2.png" alt="Profile2" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-2.png" alt="Profile2" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/education-story3.png" alt="Our Story3" />
+              <img class="w-100" src="images/education-story3.png" alt="Our Story3" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">One should use the products that can recycle. Also, everyone</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-3.png" alt="Profile3" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-3.png" alt="Profile3" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
             </div>
           </div>
         </div>
-        <div class="row my-5">
-          <div class="col-md">
+        <div class="row my-3">
+          <div class="col-md rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/our-stories-1.png" alt="Our Story1" />
+              <img class="w-100" src="images/our-stories-1.png" alt="Our Story1" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">A clean environment is essential for the existence of all living beings.</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-1.png" alt="Profile1" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-1.png" alt="Profile1" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
             </div>
           </div>
-          <div class="col-md my-5 my-md-0">
+          <div class="col-md my-3 my-md-0 mx-0 mx-md-3 rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/our-stories-2.png" alt="Our Story2" />
+              <img class="w-100" src="images/our-stories-2.png" alt="Our Story2" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">Everyone should give priority to the save the environment’</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-2.png" alt="Profile2" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-2.png" alt="Profile2" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/our-stories-3.png" alt="Our Story3" />
+              <img class="w-100" src="images/our-stories-3.png" alt="Our Story3" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">One should use the products that can recycle. Also, everyone</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-3.png" alt="Profile3" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-3.png" alt="Profile3" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
@@ -161,34 +191,34 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md">
+          <div class="col-md rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/our-stories-4.png" alt="Our Story1" />
+              <img class="w-100" src="images/our-stories-4.png" alt="Our Story1" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">A clean environment is essential for the existence of all living beings.</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-1.png" alt="Profile1" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-1.png" alt="Profile1" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
             </div>
           </div>
-          <div class="col-md my-5 my-md-0">
+          <div class="col-md my-3 my-md-0 mx-0 mx-md-3 rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/our-stories-5.png" alt="Our Story2" />
+              <img class="w-100" src="images/our-stories-5.png" alt="Our Story2" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">Everyone should give priority to the save the environment’</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-2.png" alt="Profile2" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-2.png" alt="Profile2" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md rounded pt-3 pb-1" style="border: 1px solid #e7e7e7">
             <div class="our-stories-box">
-              <img class="w-100" src="images/our-stories-6.png" alt="Our Story3" />
+              <img class="w-100" src="images/our-stories-6.png" alt="Our Story3" style="border-radius: 10px" />
               <p class="story my-3 fw-bold">One should use the products that can recycle. Also, everyone</p>
               <div class="profile d-flex">
-                <img src="images/avatars/profile-3.png" alt="Profile3" class="profile-img me-2" width="29px" height="29px" />
+                <img src="images/avatars/profile-3.png" alt="Profile3" class="profile-img me-2 rounded-circle" width="29px" height="29px" />
                 <p class="profile-name">Nadin Brzezinski</p>
               </div>
               <p class="date my-2">27 Jun 2022 12 : 30 PM</p>
@@ -207,27 +237,27 @@
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+          <li class="nav-item"><a href="/about-us.html" class="nav-link px-2 text-white">About</a></li>
         </ul>
         <ul class="nav justify-content-center mt-2 mb-4">
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-white">
-              <img src="images/icons/facebook.png" alt="Facebook" height="20px" width="20px" />
+              <img src="images/socials/facebook.png" alt="Facebook" height="20px" width="20px" />
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-white">
-              <img src="images/icons/instagram.png" alt="Instagram" height="20px" width="20px" />
+              <img src="images/socials/instagram.png" alt="Instagram" height="20px" width="20px" />
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-white">
-              <img src="images/icons/linkedin.png" alt="Linkedin" height="20px" width="20px" />
+              <img src="images/socials/linkedin.png" alt="Linkedin" height="20px" width="20px" />
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-white">
-              <img src="images/icons/rss.png" alt="RSS" height="20px" width="20px" />
+              <img src="images/socials/rss.png" alt="RSS" height="20px" width="20px" />
             </a>
           </li>
         </ul>
